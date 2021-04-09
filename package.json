@@ -20,7 +20,9 @@
     "@angular/platform-browser-dynamic": "~11.2.9",
     "@angular/router": "~11.2.9",
     "@ngneat/tailwind": "^7.0.3",
-    "@ngxs/schematics": "0.0.1-alpha.5",
+    "@ngxs/devtools-plugin": "^3.3.2",
+    "@ngxs/logger-plugin": "^3.3.2",
+    "@ngxs/store": "^3.3.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
@@ -29,6 +31,7 @@
     "@angular-devkit/build-angular": "~0.1102.8",
     "@angular/cli": "~11.2.8",
     "@angular/compiler-cli": "~11.2.9",
+    "@ngxs/schematics": "^0.0.1-alpha.5",
     "@tailwindcss/forms": "0.3.2",
     "@tailwindcss/typography": "0.4.0",
     "@types/jasmine": "~3.6.0",
