@@ -8,6 +8,9 @@ export interface AppStateModel {
 
 @State<AppStateModel>({
   name: 'app',
+  defaults: {
+    title: 'I\'m a text comming from the NGXS state but I will change because an action will be fired in...'
+  }
 })
 @Injectable()
 export class AppState {
@@ -18,9 +21,9 @@ export class AppState {
   }
 
   @Action(AppActions.ChangeTitle)
-  public changeTitle(ctx: StateContext<AppStateModel>, { payload }: AppActions.ChangeTitle): void {
-    const stateModel = ctx.getState();
-    stateModel.title = payload;
-    ctx.setState(stateModel);
+  public async changeTitle(ctx: StateContext<AppStateModel>, { payload }: AppActions.ChangeTitle): Promise<AppStateModel> {
+    return ctx.patchState(
+      {title: payload}
+    );
   }
 }

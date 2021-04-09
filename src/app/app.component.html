@@ -8,5 +8,8 @@
   <h2 class="text-2xl text-gray-500">Im just another angular starter template</h2>
   <h3 class="my-8">But I'm using <a href="https://tailwindcss.com/" class="bg-blue-500 rounded text-white p-1">tailwindcss2</a> as css framework and <a href="https://www.ngxs.io/" class="bg-green-500 rounded text-white p-1">NGXS</a> as state manager</h3>
   <p class="w-6/12 text-center text-gray-600">for sure you already know how to run an angular application so I will keep my instructions short, just run <span class="bg-gray-200 p-1">npm install</span> and <span class="bg-gray-200 p-1">ng start</span> to get started</p>
+  
+  <p class="text-2xl w-6/12 text-center text-gray-400 mt-10">{{stateText$ | async}}</p>
+  <p class="text-3xl mt-10" [ngClass]="{'hidden': (timer$ | async) == 0}">{{timer$ | async}}</p>
 </div>
 <router-outlet></router-outlet>
