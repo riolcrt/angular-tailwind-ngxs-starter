@@ -1,4 +1,4 @@
-<div class="flex w-full h-full flex-col items-center justify-center p-8">
+<div class="flex flex-col items-center justify-center p-8 ease-in-out transition-all bg-gradient-to-b from-gray-50 to-gray-300 w-full min-w-full absolute top-0 bottom-0 left-0 right-0">
   <img
     width="80"
     alt="Angular Logo"
@@ -13,3 +13,4 @@
   <p class="text-3xl mt-10" [ngClass]="{'hidden': (timer$ | async) == 0}">{{timer$ | async}}</p>
 </div>
 <router-outlet></router-outlet>
+
