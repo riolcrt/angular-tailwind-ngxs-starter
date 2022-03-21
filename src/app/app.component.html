@@ -1,16 +1,16 @@
-<div class="flex flex-col items-center justify-center p-8 ease-in-out transition-all bg-gradient-to-b from-gray-50 to-gray-300 w-full min-w-full absolute top-0 bottom-0 left-0 right-0">
+<div class="flex flex-col items-center justify-center p-8 ease-in-out transition-all bg-gradient-to-b from-slate-900 to-slate-800 w-full min-w-full absolute top-0 bottom-0 left-0 right-0">
   <img
     width="80"
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
   <h1 class="text-3xl text-blue-600 font-bold">Hello there!</h1>
-  <h2 class="text-2xl text-gray-500">Im just another angular starter template</h2>
-  <h3 class="my-8">But I'm using <a href="https://tailwindcss.com/" class="bg-blue-500 rounded text-white p-1">tailwindcss2</a> as css framework and <a href="https://www.ngxs.io/" class="bg-green-500 rounded text-white p-1">NGXS</a> as state manager</h3>
-  <p class="w-6/12 text-center text-gray-600">for sure you already know how to run an angular application so I will keep my instructions short, just run <span class="bg-gray-200 p-1">npm install</span> and <span class="bg-gray-200 p-1">ng start</span> to get started</p>
+  <h2 class="text-2xl text-white">Im just another angular starter template</h2>
+  <h3 class="my-8 text-white">But I'm using <a href="https://tailwindcss.com/" class="bg-blue-500 rounded text-white p-1">tailwindcss3</a> as css framework and <a href="https://www.ngxs.io/" class="bg-green-500 rounded text-white p-1">NGXS</a> as state manager</h3>
+  <p class="w-6/12 text-center text-gray-300">for sure you already know how to run an angular application so I will keep my instructions short,<br/> just run <span class="bg-gray-900 p-1 px-2">npm install</span> and <span class="bg-gray-900 p-1 px-2">ng start</span> to get started</p>
   
   <p class="text-2xl w-6/12 text-center text-gray-400 mt-10">{{stateText$ | async}}</p>
-  <p class="text-3xl mt-10" [ngClass]="{'hidden': (timer$ | async) == 0}">{{timer$ | async}}</p>
+  <p class="text-3xl mt-10 text-white" [ngClass]="{'hidden': (timer$ | async) == 0}">{{timer$ | async}}</p>
 </div>
 <router-outlet></router-outlet>
 
